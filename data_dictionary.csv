@@ -1,0 +1,10 @@
+﻿table,column,relationship
+customers,customer_id,PK
+orders,order_id,PK
+orders,customer_id,FK -> customers.customer_id
+products,product_id,PK
+products,seller_id,FK -> sellers.seller_id
+order_items,order_id,FK -> orders.order_id
+order_items,product_id,FK -> products.product_id
+payments,order_id,FK -> orders.order_id
+reviews,order_id,FK -> orders.order_id
